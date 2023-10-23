@@ -1,0 +1,10 @@
+﻿<h2>Скільки видів піцц ви бажаєте замовити?:</h2>
+
+<form asp-controller="Order" asp-action="ShowProducts" method="post">
+    <div class="form-group">
+        <input name="quantity" type="number" step="1" min="1" max="15" class="form-control" />
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Підтвердити</button>
+    </div>
+</form>
